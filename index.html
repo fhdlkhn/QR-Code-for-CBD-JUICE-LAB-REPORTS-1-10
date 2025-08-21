@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>QR Code Generator</title>
+        <script src="qrcode.min.js"></script>
+      </head>
+      <body>
+        <h1>QR Code for CBD-JUICE-LAB-REPORTS-1-10.pdf</h1>
+        <div id="qrcode"></div>
+      
+        <script>
+          // URL to encode in the QR code
+          const url = "https://myzenroll.com/wp-content/uploads/2025/08/CBD-JUICE-LAB-REPORTS-1-10.pdf";
+      
+          // Generate QR code
+          new QRCode(document.getElementById("qrcode"), {
+            text: url,
+            width: 256, // Size of the QR code
+            height: 256,
+          });
+        </script>
+      </body>
+</html>
